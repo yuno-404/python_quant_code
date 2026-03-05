@@ -22,6 +22,3 @@ python scripts/asset_price_modeling/symmetric_random_walk.py
 python scripts/stochastic_process/stochastic_process_discrete_correlation.py
 ```
 
-## Notes
-- This public view is intentionally minimal.
-- Internal planning/docs (for example `SPECS/`) are kept in private workflow.
