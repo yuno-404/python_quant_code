@@ -10,3 +10,5 @@ Required structure per unit:
 Global files:
 - `SPECS/SDD.md`
 - `SPECS/TASK.md`
+
+Documentation governance follows `SPECS/SDD.md` (global rule) and applies to every unit.

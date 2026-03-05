@@ -43,15 +43,16 @@ python scripts/asset_price_modeling/jump_diffusion.py
 
 Stochastic process:
 ```bash
-python scripts/stochastic_process/stochastic_process_discrete_correlation.py
-python scripts/stochastic_process/stochastic_process_covariance_matrix.py
-python scripts/stochastic_process/stochastic_process_time_averages.py
-python scripts/stochastic_process/stochastic_process_stationarity_demo.py
+python scripts/stochastic_process/stochastic_process_sequence_mean_autocorrelation.py
+python scripts/stochastic_process/stochastic_process_two_sequence_correlation.py
+python scripts/stochastic_process/stochastic_process_weak_stock_cross_correlation_2025.py
+python scripts/stochastic_process/stochastic_process_strong_stock_cross_correlation_2025.py
+python scripts/stochastic_process/stochastic_process_covariance_matrix_2025.py
 ```
 
 Headless plotting (CI-safe):
 ```bash
-MPLBACKEND=Agg python scripts/stochastic_process/stochastic_process_discrete_correlation.py
+MPLBACKEND=Agg python scripts/stochastic_process/stochastic_process_sequence_mean_autocorrelation.py
 ```
 
 ## 5) Lint / Format Commands

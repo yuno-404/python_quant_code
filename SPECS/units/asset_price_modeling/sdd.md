@@ -23,3 +23,4 @@
 - Function-first implementation.
 - No sample defaults in function definitions.
 - Terminal-runnable scripts.
+- Inherit global constraints from `SPECS/SDD.md` -> `Development Constraints (GBM-style)`.

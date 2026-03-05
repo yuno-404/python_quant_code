@@ -1,0 +1,18 @@
+Asset Pricing Models.
+2 A simulation of symmetric random walk.
+2 A simulation of Brownian motion.
+2 A simulation of geometric Brownian motion.
+2 A program for estimating the drift and volatility of a stock.
+2 A simulation of jump diffusion process.
+2.2. Stochastic Processes.
+2 Accept an arbitrary sequence inputted by the user, calculate its mean and
+display its autocorrelation function.
+12
+2 Accept two arbitrary sequences inputted by the user, calculate and display
+their respective autocorrelation functions and their cross‐correlation func‐
+tion.
+2 Pick two US stocks A and B which are weakly correlated and plot their cross‐
+correlation function (for the year 2025).
+2 Pick two US stocks C and D which are strongly correlated and plot their
+cross‐correlation function (for the year 2025).
+2 Compute the covariance matrix of A, B, C, and D
