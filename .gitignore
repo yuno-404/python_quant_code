@@ -1,0 +1,33 @@
+# Python cache/build
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Tool caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.tox/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Local runtime artifacts
+# Keep runtime/cache ignored, but track shared skill docs.
+.opencode/*
+!.opencode/README.md
+!.opencode/skills/
+!.opencode/skills/*.md
