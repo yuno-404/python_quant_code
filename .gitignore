@@ -1,58 +1,33 @@
-# =============================================================================
-# 此 repo 對外只追蹤 standalone notebook
-# =============================================================================
-
-# 忽略教科書與課程相關內容
-Asset_Price_Modeling/
-Python_Program_Project_1_Mar_2026/
-
-# 忽略 Agent 與 SDD/規格文件
-AGENTS.md
-SPECS/
-.opencode/
-
-# 忽略測試相關檔案
-tests/
-.pytest_cache/
-coverage.xml
-htmlcov/
-.tox/
-
-# 忽略套件原始碼、範例、腳本（standalone notebook 已內含所有實作）
-src/
-examples/
-scripts/
-pyproject.toml
-requirements.txt
-uv.lock
-
-# 忽略非 standalone 的 notebook（依賴本地套件，別人無法執行）
-notebooks/asset_price_modeling_maintext_implementation.ipynb
-notebooks/asset_price_modeling_full_walkthrough.ipynb
-notebooks/asset_price_modeling_walkthrough.ipynb
-
-# GitHub Actions（本地開發用，不需對外公開）
-.github/
-
-# Python 標準忽略項目
+# Python cache/build
 __pycache__/
 *.py[cod]
 *$py.class
 *.egg-info/
+
+# Virtual environments
 .venv/
-env/
 venv/
+env/
 ENV/
-env.bak/
-venv.bak/
+
+# Tool caches
 .mypy_cache/
 .ruff_cache/
+.pytest_cache/
+.tox/
 
-# Jupyter Notebook 備份與檢查點
+# Notebook checkpoints
 .ipynb_checkpoints/
 
-# 其他開發工具
+# OS/editor
+.DS_Store
 .vscode/
 .idea/
 *.swp
-.DS_Store
+
+# Local runtime artifacts
+# Keep runtime/cache ignored, but track shared skill docs.
+.opencode/*
+!.opencode/README.md
+!.opencode/skills/
+!.opencode/skills/*.md

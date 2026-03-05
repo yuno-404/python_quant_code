@@ -6,7 +6,7 @@ plt.style.use("seaborn-v0_8")
 
 
 def estimate_drift_and_volatility(prices, dt):
-    """Return (alpha, sigma) — annualised drift and volatility from a price series.
+    """Return (alpha, sigma) - annualised drift and volatility from a price series.
 
     Uses the MLE-style estimator based on log-returns:
         r_j = log(S_{j+1} / S_j)
@@ -27,7 +27,7 @@ def estimate_drift_and_volatility(prices, dt):
 
 # --- Fetch real market data (AAPL, 2 years of monthly closes) ---
 symbol = "AAPL"
-dt = 1 / 12  # monthly data → dt = 1/12 year
+dt = 1 / 12  # monthly data, so dt = 1/12 year
 
 hist = yf.Ticker(symbol).history(period="2y", interval="1mo", auto_adjust=True)
 prices = hist["Close"].dropna().to_numpy(float)
