@@ -1,27 +1,33 @@
 # Stochastic Process Standalone Scripts
 
-These scripts are standalone and can be run directly from terminal.
-They are based on `Stochastic_Process/Stochastic_Process.md`.
+Standalone scripts aligned to `SPECS/list.txt` requirements.
+Based on `Stochastic_Process/Stochastic_Process.md`.
 
 ## Scripts
-- `stochastic_process_discrete_correlation.py`
-  - mean, autocorrelation, cross-correlation on lecture vectors
-- `stochastic_process_covariance_matrix.py`
-  - covariance and correlation matrix example (X, Y, Z)
-- `stochastic_process_time_averages.py`
-  - running time average and time autocorrelation example
-- `stochastic_process_stationarity_demo.py`
-  - stationarity vs non-stationarity visual comparison
+
+- `stochastic_process_sequence_mean_autocorrelation.py`
+  - Accept a user-input sequence, compute mean and full-lag autocorrelation
+- `stochastic_process_two_sequence_correlation.py`
+  - Accept two user-input sequences, compute autocorrelation and cross-correlation
+- `stochastic_process_weak_stock_cross_correlation_2025.py`
+  - Cross-correlation of weakly correlated US stocks A (XOM) and B (JNJ) for 2025
+- `stochastic_process_strong_stock_cross_correlation_2025.py`
+  - Cross-correlation of strongly correlated US stocks C (AAPL) and D (MSFT) for 2025
+- `stochastic_process_covariance_matrix_2025.py`
+  - Covariance matrix of A, B, C, D using 2025 log returns
 
 ## Run
+
 ```bash
-python scripts/stochastic_process/stochastic_process_discrete_correlation.py
-python scripts/stochastic_process/stochastic_process_covariance_matrix.py
-python scripts/stochastic_process/stochastic_process_time_averages.py
-python scripts/stochastic_process/stochastic_process_stationarity_demo.py
+python scripts/stochastic_process/stochastic_process_sequence_mean_autocorrelation.py
+python scripts/stochastic_process/stochastic_process_two_sequence_correlation.py
+python scripts/stochastic_process/stochastic_process_weak_stock_cross_correlation_2025.py
+python scripts/stochastic_process/stochastic_process_strong_stock_cross_correlation_2025.py
+python scripts/stochastic_process/stochastic_process_covariance_matrix_2025.py
 ```
 
 ## Dependencies
+
 ```bash
-pip install numpy matplotlib
+pip install numpy matplotlib yfinance
 ```
