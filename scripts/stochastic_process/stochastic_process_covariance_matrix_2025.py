@@ -45,13 +45,21 @@ if __name__ == "__main__":
     print("Covariance matrix (2025 log returns):")
     print(np.array2string(cov, precision=8))
 
-    fig, ax = plt.subplots(figsize=(6, 5))
-    im = ax.imshow(cov, cmap="coolwarm")
-    ax.set_title("Covariance Matrix of A, B, C, D (2025)")
-    ax.set_xticks(range(4), ["A", "B", "C", "D"])
-    ax.set_yticks(range(4), ["A", "B", "C", "D"])
     for i, ticker in enumerate(tickers):
         print(f"{['A', 'B', 'C', 'D'][i]} = {ticker}")
-    fig.colorbar(im, ax=ax, shrink=0.85)
+
+    fig, ax = plt.subplots(figsize=(6, 3.5))
+    ax.axis("off")
+    cov_text = [[f"{value:.2e}" for value in row] for row in cov]
+    table = ax.table(
+        cellText=cov_text,
+        rowLabels=["A", "B", "C", "D"],
+        colLabels=["A", "B", "C", "D"],
+        loc="center",
+    )
+    table.auto_set_font_size(False)
+    table.set_fontsize(9)
+    table.scale(1.0, 1.4)
+    ax.set_title("Covariance Matrix of A, B, C, D (2025) - Table", pad=12)
     plt.tight_layout()
     plt.show()
