@@ -1,8 +1,5 @@
 # Stochastic Process Standalone Scripts
 
-Standalone scripts aligned to `SPECS/list.txt` requirements.
-Based on `Stochastic_Process/Stochastic_Process.md`.
-
 ## Scripts
 
 - `stochastic_process_sequence_mean_autocorrelation.py`
